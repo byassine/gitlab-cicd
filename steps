@@ -6,6 +6,9 @@ install gitlab
 
 2*
 install k8s runner with registration key
+
+get the registration key from repo CICD runner
+
        helm install --namespace gitlab-k8s gitlab-runner -f gitlab-values.yaml gitlab/gitlab-runner
 change values file gitlab-values.yaml
 
