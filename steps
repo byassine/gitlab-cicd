@@ -15,11 +15,11 @@ change values file gitlab-values.yaml
 Create seriveAccount mentionned in values file 
     it will be created automaticly by the helm values file 
 
-create role for that serviceaccount
+create Clusterrole for that serviceaccount
     kubectl apply -f role.yaml
 
-create a clusterrolebinding for having access in all cluster
-      kubectl create clusterrolebinding gitlab-k8s-runner-binding --clusterrole=cluster-admin --serviceaccount=gitlab-k8s:default
+create a clusterrolebinding for having access in that namespace
+      kubectl apply -f clusterbind.yaml
 
 
 3*
