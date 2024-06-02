@@ -541,9 +541,9 @@ tolerations: []
 ## ref: `gitlab-runner register --help`
 ## ref: https://docs.gitlab.com/runner/configuration/advanced-configuration.html
 ##
-# envVars:
-#   - name: RUNNER_EXECUTOR
-#     value: kubernetes
+envVars:
+  - name: KUBERNETES_SERVICE_ACCOUNT
+    value: gitlab-k8s
 
 ## Additional environment variables from key-value pairs.
 extraEnv: {}
