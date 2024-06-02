@@ -23,4 +23,9 @@ create a clusterrolebinding for having access in all cluster
 
 
 3*
-execute the pipline to see if succeded
+il faut changer la valeur du variable 
+envVars:
+  - name: KUBERNETES_SERVICE_ACCOUNT
+    value: gitlab-k8s
+
+Le fichier gitlab-values.yaml contient tous les changements nécéssaire
