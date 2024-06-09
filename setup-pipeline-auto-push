@@ -1,0 +1,9 @@
+1/ Il faut installer un registry comme harbor
+    pour harbor
+        il faut ajouter les certifs nécéssaire dans l'emplacement /data/cert qui tu doit creer (domaine.com.crt/domaine.com.key)
+        il faut ajouter les certifs pour docker (etc/docker/cert.d/domaine.com/domaine.com.cert et domaine.com.key et ca.crt)
+        il faut chaque fois reqémarrer pour verifier
+        il faut ajouter le proxy conf pour docker et n'oublie pas no_proxy
+        daemon.json de docker parfois creer des problèms faut la supprimer pour verifier
+
+voir le fichers harbor.yml-example pour la configuration
