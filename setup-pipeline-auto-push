@@ -7,3 +7,20 @@
         daemon.json de docker parfois creer des problèms faut la supprimer pour verifier
 
 voir le fichers harbor.yml-example pour la configuration
+
+dans le pipeline 
+
+pour faciliter le build des images on utilise kaniko executor, nécéssite l'utilisation du gitlab-runner sur docker ou kubernetes
+
+pour docker hub on utilise le proxy pour internet
+
+pour repository local le paramétre no_proxy est important!!!
+
+Les Variable des repository sont ajouter dans l'onglet CI/CD variables de gitlab ou sur le scripte Si sur gitlab il faut supprimer protected
+
+Les runners sont aussi creer dans l'onglet CI/CD 
+
+voir le ficher gitlab-ci.yml-example 
+
+
+
