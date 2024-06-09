@@ -18,6 +18,10 @@ pour repository local le paramétre no_proxy est important!!!
 
 Les Variable des repository sont ajouter dans l'onglet CI/CD variables de gitlab ou sur le scripte Si sur gitlab il faut supprimer protected
 
+utiliser pour declencher le job pour une branche et tag specefique
+  rules:
+    - if: $CI_COMMIT_TAG
+
 Les runners sont aussi creer dans l'onglet CI/CD 
 
 voir le ficher gitlab-ci.yml-example 
